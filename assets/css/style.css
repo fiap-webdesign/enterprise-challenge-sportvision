@@ -1,0 +1,100 @@
+*,a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+}
+
+
+:root {
+    /* variáveis das cores */
+    --laranja-vibrante: #FE7743;
+    --azul-escuro: #273F4F;
+    --azul-medio: #447D9B;
+    --cinza-claro: #D7D7D7;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* cabeçalho */
+.cabecalho {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--azul-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-ul {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.cabecalho-ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+/* cabeçalho */
+
+/* hero */
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://placehold.co/1080x420);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+/* hero */
+
+/* informative */
+.informative {
+    margin: 10% 8rem;
+    display: flex;
+    gap: 30px;
+}
+
+.informative-img img{
+    border-radius: 75px;
+}
+
+.informative-text {
+    margin: 0 10rem;
+    text-align: justify;
+}
+/* informative */
+
+.container-cards {
+    width: 90%;
+    height: 90vh;
+    margin: 5%;
+    padding: 0 10%;
+    background-color: var(--azul-medio);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* rodapé */
+.rodape {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--azul-escuro);
+    
+}
+/* rodapé */
