@@ -32,6 +32,7 @@ body {
     width: 100%;
     height: 10vh;
     background-color: #FFF;
+    border-bottom: 5px solid var(--azul-escuro);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,6 +204,11 @@ body {
     padding: 6px 80px;
     border-radius: 25px;
     color: #000;
+}
+.informative-text a:hover {
+    background-color: var(--azul-medio);
+    color: #FFF;
+    transition: 0.2s;
 }
 
 /* informative */
