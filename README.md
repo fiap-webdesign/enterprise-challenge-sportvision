@@ -71,6 +71,7 @@ O **Sport View** foi planejado e implementado com as seguintes seções:
 - **HTML5** — Estruturação das páginas.  
 - **CSS3** — Estilização e aplicação da identidade visual.  
 - **JavaScript** — Interatividade e funcionalidades dinâmicas.
+- **Bootstrap** — Estrutura de framework.
   
 ---
 
