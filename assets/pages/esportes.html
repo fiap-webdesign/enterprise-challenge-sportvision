@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports View</title>
+    <title>SportView</title>
 
     <!-- link com o google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,8 @@
     <!-- link com o bootstrap -->
 
     <!-- link com o css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/esportes.css">
     <!-- link com o css -->
 </head>
 
@@ -31,13 +32,13 @@
     <!-- cabeçalho -->
     <header class="cabecalho">
         <div class="logo-container">
-            <a href="./index.html">
-                <img class="cabecalho-logo" src="./assets/images/sportview-logo.png"
-                alt="logotipo do site sportview estilizado com uma bola no lugar do O">
+            <a href="../../index.html">
+                <img class="cabecalho-logo" src="../images/sportview-logo.png"
+                    alt="logotipo do site sportview estilizado com uma bola no lugar do O">
             </a>
         </div>
         <button class="cabecalho-nav-toggler" id="menu-toggle">
-            <img src="./assets/images/nav-toggler.png" alt="botao de menu em formato de hamburguer">
+            <img src="../images/nav-toggler.png" alt="botao de menu em formato de hamburguer">
         </button>
     </header>
     <!-- cabeçalho -->
@@ -45,17 +46,17 @@
     <!-- sidebar do cabeçalho -->
     <nav class="nav-sidebar" id="sidebar">
         <div class="sidebar-top">
-            <img class="sidebar-logo" src="./assets/images/sportview-logo.png" alt="logotipo do site">
+            <img class="sidebar-logo" src="../images/sportview-logo.png" alt="logotipo do site">
             <button class="close-btn" id="close-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
         <ul class="sidebar-ul">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./assets/pages/sobre.html">Sobre</a></li>
-            <li><a href="./assets/pages/esportes.html">Esportes</a></li>
-            <li><a href="./assets/pages/blog.html">Blog</a></li>
-            <li><a href="./assets/pages/contato.html">Contato</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./esportes.html">Esportes</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contato.html">Contato</a></li>
         </ul>
         <div class="social">
             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -63,41 +64,21 @@
         </div>
     </nav>
     <!-- sidebar do cabeçalho -->
-    
-    
-    <main>
-        <!-- hero -->
-        <section class="hero">
-        </section>
-        <!-- hero -->
 
+    <main>
         <!-- informative -->
-        <section class="informative">
-            <div class="informative-text">
-                <h1>Sobre</h1>
-                <h3>O motivo pelo esporte</h3>
-            </div>
-            <div class="informative-img">
-                <img src="./assets/images/sportview-logo-LeA.png" alt="logotipo do site em um fundo azul">
-            </div>
-            <div class="informative-text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil minus autem voluptate, nostrum ut
-                    consequuntur consequatur odio reiciendis explicabo dolorem nobis pariatur ducimus rerum doloribus
-                    sapiente quis eos! Quas, porro?</p>
-                <a href="./assets/pages/sobre.html">Conhecer</a>
+        <section class="informative-esporte">
+            <div class="informative-esporte-text">
+                <h1>Conhecendo</h1>
+                <h3>esportes</h3>
             </div>
         </section>
         <!-- informative -->
+
         <!-- cards -->
         <section class="container-cards container-fluid row">
-            <div class="container-cards-informative">
-                <h2>Esportes</h2>
-                <h3>O motivo pelo esporte</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cum ea pariatur, consectetur unde
-                    tempora.</p>
-            </div>
             <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/croquet.jpeg" class="card-img" alt="Campo de croquet com equipamentos">
+                <img src="../images/croquet.jpeg" class="card-img" alt="Campo de croquet com equipamentos">
                 <div class="card-overlay">
                     <h3>Esporte</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, deserunt.</p>
@@ -105,7 +86,7 @@
                 </div>
             </div>
             <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/sepak-takraw.jpg" class="card-img"
+                <img src="../images/sepak-takraw.jpg" class="card-img"
                     alt="Quadra de Sepak-takraw com seis jogadores">
                 <div class="card-overlay">
                     <h3>Esporte</h3>
@@ -114,7 +95,7 @@
                 </div>
             </div>
             <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/ultimate-frisbee.jpeg" class="card-img"
+                <img src="../images/ultimate-frisbee.jpeg" class="card-img"
                     alt="Jogador de ultimate-frisbee saltando para pegar o disco">
                 <div class="card-overlay">
                     <h3>Esporte</h3>
@@ -123,7 +104,7 @@
                 </div>
             </div>
             <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/lacrosse.png" class="card-img"
+                <img src="../images/lacrosse.png" class="card-img"
                     alt="Jogadora de Lacrosse correndo pela quadra carregando a bola">
                 <div class="card-overlay">
                     <h3>Esporte</h3>
@@ -132,7 +113,7 @@
                 </div>
             </div>
             <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/ski-biking.jpg" class="card-img" alt="">
+                <img src="../images/ski-biking.jpg" class="card-img" alt="">
                 <div class="card-overlay">
                     <h3>Esporte</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, deserunt.</p>
@@ -151,7 +132,7 @@
             <a href="">Contatar</a>
         </div>
         <hr>
-        <img class="rodape-logo" src="./assets/images/sportview-logo.png" alt="logotipo do site">
+        <img class="rodape-logo" src="../images/sportview-logo.png" alt="logotipo do site">
         <section class="rodape-links">
             <div class="rodape-ancoras">
                 <h4>Links</h4>
@@ -204,7 +185,7 @@
         crossorigin="anonymous"></script>
     <!-- link com o JS do bootstrap -->
     <!-- link com o meu JS -->
-    <script src="./assets/JS/main.js"></script>
+    <script src="../JS/main.js"></script>
     <!-- link com o meu JS -->
 </body>
 
