@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportView</title>
+    <title>Locais de Prática</title>
 
     <!-- link com o google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +24,17 @@
 
     <!-- link com o css -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/esportes.css">
+    <link rel="stylesheet" href="../css/locais.css">
     <!-- link com o css -->
+
+    <!-- link com o leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <!-- link com o leaflet -->
+
 </head>
 
 <body>
+
     <!-- cabeçalho -->
     <header class="cabecalho">
         <div class="logo-container">
@@ -58,6 +64,7 @@
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contato.html">Contato</a></li>
             <li><a href="./locais.html">Locais</a></li>
+
         </ul>
         <div class="social">
             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -67,94 +74,18 @@
     <!-- sidebar do cabeçalho -->
 
     <main>
-        <!-- informative -->
-        <section class="informative-esporte">
-            <div class="informative-esporte-text">
-                <h1>Conhecendo</h1>
-                <h3>esportes</h3>
-            </div>
-        </section>
-        <!-- informative -->
+        <section class="map-banner"></section>
 
-        <!-- cards -->
-        <section class="container-cards container-fluid row">
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="../images/croquet.jpeg" class="card-img" alt="Campo de croquet com equipamentos">
-                <div class="left-half">
-                    <div class="overlay left-overlay">
-                        <a href="./pages-sports/sobre/about-croquet.html"><h3>Sobre</h3></a>
-                    </div>
-                </div>
-                <div class="right-half">
-                    <div class="overlay right-overlay">
-                        <a href="./pages-sports/local/local-croquete.html"><h3>Local de prática</h3></a>
-                    </div>
-                </div>
-                <div class="card-title"><h3>Croquet</h3></div>
-            </div>
+        <div class="titulo">
+            <h1>Onde praticar?</h1>
+        </div>
+        
+        <!-- mapa -->
+        <div id="map"></div>
+        <!-- mapa -->
 
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="../images/sepak-takraw.jpg" class="card-img" alt="Quadra de Sepak-takraw com seis jogadores">
-                <div class="left-half">
-                    <div class="overlay left-overlay">
-                        <a href="./pages-sports/sobre/about-sepak.html"><h3>Sobre</h3></a>
-                    </div>
-                </div>
-                <div class="right-half">
-                    <div class="overlay right-overlay">
-                        <a href="./pages-sports/local/local-sepak.html"><h3>Local de prática</h3></a>
-                    </div>
-                </div>
-                <div class="card-title"><h3>Sepak Takraw</h3></div>
-            </div>
-
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="../images/ultimate-frisbee.jpeg" class="card-img" alt="Jogador de ultimate-frisbee saltando para pegar o disco">
-                <div class="left-half">
-                    <div class="overlay left-overlay">
-                        <a href="./pages-sports/sobre/about-frisbee.html"><h3>Sobre</h3></a>
-                    </div>
-                </div>
-                <div class="right-half">
-                    <div class="overlay right-overlay">
-                        <a href="./pages-sports/local/local-frisbee.html"><h3>Local de prática</h3></a>
-                    </div>
-                </div>
-                <div class="card-title"><h3>Ultimate Frisbee</h3></div>
-            </div>
-
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="../images/lacrosse.png" class="card-img" alt="Jogadora de Lacrosse correndo pela quadra carregando a bola">
-                <div class="left-half">
-                    <div class="overlay left-overlay">
-                        <a href="./pages-sports/sobre/about-lacrosse.html"><h3>Sobre</h3></a>
-                    </div>
-                </div>
-                <div class="right-half">
-                    <div class="overlay right-overlay">
-                        <a href="./pages-sports/local/local-lacrosse.html"><h3>Local de prática</h3></a>
-                    </div>
-                </div>
-                <div class="card-title"><h3>Lacrosse</h3></div>
-            </div>
-
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="../images/ski-biking.jpg" class="card-img" alt="">
-                <div class="left-half">
-                    <div class="overlay left-overlay">
-                        <a href="./pages-sports/sobre/about-sky.html"><h3>Sobre</h3></a>
-                    </div>
-                </div>
-                <div class="right-half">
-                    <div class="overlay right-overlay">
-                        <a href="./pages-sports/local/local-ski.html"><h3>Local de prática</h3></a>
-                    </div>
-                </div>
-                <div class="card-title"><h3>Ski Biking</h3></div>
-            </div>
-        </section>
-        <!-- cards -->
     </main>
+
 
     <!-- rodape -->
     <footer class="rodape">
@@ -207,7 +138,8 @@
             </div>
         </section>
         <hr>
-        <p class="copyright">Feito por: Yuri Guerreiro Lopes de Avila - Rm: 563361 & Ana Beatriz Ferreira de Sousa - Rm: 566313</p>
+        <p class="copyright">Feito por: Yuri Guerreiro Lopes de Avila - Rm: 563361 & Ana Beatriz Ferreira de Sousa - Rm:
+            566313</p>
     </footer>
     <!-- rodape -->
 
@@ -216,8 +148,14 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <!-- link com o JS do bootstrap -->
+
+    <!-- link com o script do leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- link com o script do leaflet -->
+
     <!-- link com o meu JS -->
     <script src="../JS/main.js"></script>
+    <script src="../JS/map.js"></script>
     <!-- link com o meu JS -->
 </body>
 
