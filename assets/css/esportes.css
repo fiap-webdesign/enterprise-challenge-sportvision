@@ -1,5 +1,4 @@
-*,
-a {
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -8,14 +7,12 @@ a {
     text-decoration: none;
 }
 
-
 :root {
     /* variáveis das cores */
     --laranja-vibrante: #FE7743;
     --azul-escuro: #273F4F;
     --azul-medio: #447D9B;
     --cinza-claro: #D7D7D7;
-
 }
 
 html {
@@ -45,7 +42,6 @@ body {
     font-weight: 800;
     color: var(--azul-escuro);
     margin-right: 10%;
-
 }
 
 .informative-esporte h3 {
@@ -65,6 +61,7 @@ body {
     border-radius: 25px;
     color: #000;
 }
+
 .informative-esporte-text a:hover {
     background-color: var(--azul-medio);
     color: #FFF;
@@ -72,3 +69,118 @@ body {
 }
 
 /* informative */
+
+/* container base */
+.container-cards {
+    width: 100%;
+    background-color: var(--azul-escuro);
+    padding: 0;
+    margin: 0;
+}
+
+/* card */
+.meus-cards {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+@media (min-width: 1024px) {
+    .meus-cards .card-img {
+        height: 40vh;
+    }
+}
+
+/* halves */
+.left-half,
+.right-half {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+}
+
+.left-half {
+    left: 0;
+}
+
+.right-half {
+    right: 0;
+}
+
+/* overlays */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.4s ease;
+    overflow: hidden;
+}
+
+.overlay a h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.overlay a h3:hover {
+    color: var(--azul-medio);
+}
+
+/* Overlay left */
+.left-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Overlay right */
+.right-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* comportamento hover */
+.left-half:hover .left-overlay {
+    height: 100%;
+}
+
+.right-half:hover .right-overlay {
+    height: 100%;
+}
+
+/* efeito imagem */
+.meus-cards:hover .card-img {
+    transform: scale(1.05);
+}
+
+/* card title */
+.card-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #000;
+    z-index: 1;
+    width: max-content;
+}
+
+.meus-cards:hover .card-title {
+    display: none;
+}

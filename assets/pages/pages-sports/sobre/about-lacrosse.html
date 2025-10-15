@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports View</title>
+    <title>SportView | Sobre Lacrosse</title>
 
     <!-- link com o google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,13 @@
     <!-- link com o bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- link com o bootstrap -->
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <!-- link com o bootstrap -->
 
     <!-- link com o css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/esportes-sobre.css">
     <!-- link com o css -->
 </head>
 
@@ -31,13 +34,13 @@
     <!-- cabeçalho -->
     <header class="cabecalho">
         <div class="logo-container">
-            <a href="./index.html">
-                <img class="cabecalho-logo" src="./assets/images/sportview-logo.png"
-                alt="logotipo do site sportview estilizado com uma bola no lugar do O">
+            <a href="/index.html">
+                <img class="cabecalho-logo" src="/assets/images/sportview-logo.png"
+                    alt="logotipo do site sportview estilizado com uma bola no lugar do O">
             </a>
         </div>
         <button class="cabecalho-nav-toggler" id="menu-toggle">
-            <img src="./assets/images/nav-toggler.png" alt="botao de menu em formato de hamburguer">
+            <img src="/assets/images/nav-toggler.png" alt="botao de menu em formato de hamburguer">
         </button>
     </header>
     <!-- cabeçalho -->
@@ -45,17 +48,17 @@
     <!-- sidebar do cabeçalho -->
     <nav class="nav-sidebar" id="sidebar">
         <div class="sidebar-top">
-            <img class="sidebar-logo" src="./assets/images/sportview-logo.png" alt="logotipo do site">
+            <img class="sidebar-logo" src="/assets/images/sportview-logo.png" alt="logotipo do site">
             <button class="close-btn" id="close-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
         <ul class="sidebar-ul">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./assets/pages/sobre.html">Sobre</a></li>
-            <li><a href="./assets/pages/esportes.html">Esportes</a></li>
-            <li><a href="./assets/pages/blog.html">Blog</a></li>
-            <li><a href="./assets/pages/contato.html">Contato</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/assets/pages/sobre.html">Sobre</a></li>
+            <li><a href="/assets/pages/esportes.html">Esportes</a></li>
+            <li><a href="/assets/pages/blog.html">Blog</a></li>
+            <li><a href="/assets/pages/contato.html">Contato</a></li>
         </ul>
         <div class="social">
             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -63,66 +66,45 @@
         </div>
     </nav>
     <!-- sidebar do cabeçalho -->
-    
-    
+
     <main>
         <!-- hero -->
-        <section class="hero">
-        </section>
+        <section class="hero-esportes-lacrosse">
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <i class="bi bi-people info-icon"></i> <!-- Ícone para tipo de esporte (grupo/individual) -->
+                        <div class="info-title">Grupo</div>
+                    </div>
+                    <div class="info-block">
+                        <i class="bi bi-clock info-icon"></i> <!-- Ícone para duração -->
+                        <div class="info-title">Duração: <br>60 min</div>
+                    </div>
+                    <div class="info-block">
+                        <i class="bi bi-people-fill info-icon"></i> <!-- Ícone para quantidade de jogadores -->
+                        <div class="info-title">Jogadores:<br>10 por equipe</div>
+                    </div>
+                </div>
+            </section>
         <!-- hero -->
+        <!-- sobre -->
+        <section class="sobre">
+            <div class="sobre-item">
+                <img src="/assets/images/lacrosse-sobre.jpg" alt="" class="sobre-img">
+                <div class="sobre-texto">
+                    <h2>Sobre</h2>
+                    <p>O lacrosse é um esporte de equipe dinâmico e de contato, considerado o mais antigo da América do Norte, originado entre povos indígenas nativos americanos (como os iroqueses) no século XII, onde era jogado em rituais espirituais e guerras simbólicas, com campos enormes e centenas de jogadores. Modernizado no Canadá no século XIX por europeus, foi padronizado em 1867 e hoje é regulado pela World Lacrosse. Popular nos EUA (esporte universitário de elite), Canadá e crescente na Europa e Ásia, inclui variantes como field lacrosse (masculino/feminino), box lacrosse (indoor em rinque de hóquei) e women's lacrosse (com regras menos contato).
+                </div>
+            </div>
 
-        <!-- informative -->
-        <section class="informative">
-            <div class="informative-text">
-                <h1>Sobre</h1>
-                <h3>O motivo pelo esporte</h3>
-            </div>
-            <div class="informative-img">
-                <img src="./assets/images/sportview-logo-LeA.png" alt="logotipo do site em um fundo azul">
-            </div>
-            <div class="informative-text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil minus autem voluptate, nostrum ut
-                    consequuntur consequatur odio reiciendis explicabo dolorem nobis pariatur ducimus rerum doloribus
-                    sapiente quis eos! Quas, porro?</p>
-                <a href="./assets/pages/sobre.html">Conhecer</a>
+            <div class="sobre-item">
+                <div class="sobre-texto">
+                    <h2>Como jogar</h2>
+                    <p>Usa um bastão (crosse) com uma rede na ponta para carregar, passar e arremessar uma bola de borracha sólida rumo ao gol adversário. O objetivo é marcar gols (1 ponto cada) protegendo o gol com rede. Há contato físico permitido (checks com bastão ou corpo no field masculino), goleiros equipados e ênfase em velocidade, agilidade e estratégia. No feminino, contato é mínimo e equipamentos diferem (sem capacete completo).</p>
+                </div>
+                <img src="/assets/images/lacrosse-como-jogar.jpg" alt="Jogadores disputando por uma bola de sepak-takraw no ar" class="sobre-img-2">
             </div>
         </section>
-        <!-- informative -->
-        <!-- cards -->
-        <section class="container-cards container-fluid row">
-            <div class="container-cards-informative">
-                <h2>Esportes</h2>
-                <h3>O motivo pelo esporte</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cum ea pariatur, consectetur undetempora.</p>
-            </div>
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/croquet.jpeg" class="card-img" alt="Campo de croquet com equipamentos">
-                <div class="card-overlay">
-                    <h3>Croquet</h3>
-                    <p>O croquet é um esporte de origem inglesa, jogado em um gramado com tacos e bolas.</p>
-                    <a class="" href="/assets/pages/esportes.html">Conhecer</a>
-                </div>
-            </div>
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/sepak-takraw.jpg" class="card-img"
-                    alt="Quadra de Sepak-takraw com seis jogadores">
-                <div class="card-overlay">
-                    <h3>Sepak Takraw</h3>
-                    <p>O Sepak Takraw é um esporte de origem asiática, jogado com os pés, cabeça, joelhos e peito.</p>
-                    <a class="" href="/assets/pages/esportes.html">Conhecer</a>
-                </div>
-            </div>
-            <div class="meus-cards col-12 col-sm-12 col-md-6 col-lg-12">
-                <img src="./assets/images/ultimate-frisbee.jpeg" class="card-img"
-                    alt="Jogador de ultimate-frisbee saltando para pegar o disco">
-                <div class="card-overlay">
-                    <h3>Ultimate Frisbee</h3>
-                    <p>O ultimate frisbee (ou simplesmente ultimate) é um esporte sem contato, autogerido e dinâmico.</p>
-                    <a class="" href="/assets/pages/esportes.html">Conhecer</a>
-                </div>
-            </div>
-        </section>
-        <!-- cards -->
+        <!-- sobre -->
     </main>
 
     <!-- rodape -->
@@ -133,7 +115,7 @@
             <a href="">Contatar</a>
         </div>
         <hr>
-        <img class="rodape-logo" src="./assets/images/sportview-logo.png" alt="logotipo do site">
+        <img class="rodape-logo" src="/assets/images/sportview-logo.png" alt="logotipo do site">
         <section class="rodape-links">
             <div class="rodape-ancoras">
                 <h4>Links</h4>
@@ -186,7 +168,7 @@
         crossorigin="anonymous"></script>
     <!-- link com o JS do bootstrap -->
     <!-- link com o meu JS -->
-    <script src="./assets/JS/main.js"></script>
+    <script src="../JS/main.js"></script>
     <!-- link com o meu JS -->
 </body>
 

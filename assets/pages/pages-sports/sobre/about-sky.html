@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportView | Contato</title>
+    <title>SportView | Sobre Sky</title>
 
     <!-- link com o google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +18,15 @@
     <!-- link com o fontawesome -->
 
     <!-- link com o bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- link com o bootstrap -->
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <!-- link com o bootstrap -->
 
     <!-- link com o css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/esportes-sobre.css">
     <!-- link com o css -->
 </head>
 
@@ -33,13 +34,13 @@
     <!-- cabeçalho -->
     <header class="cabecalho">
         <div class="logo-container">
-            <a href="../../index.html">
-                <img class="cabecalho-logo" src="../images/sportview-logo.png"
+            <a href="/index.html">
+                <img class="cabecalho-logo" src="/assets/images/sportview-logo.png"
                     alt="logotipo do site sportview estilizado com uma bola no lugar do O">
             </a>
         </div>
         <button class="cabecalho-nav-toggler" id="menu-toggle">
-            <img src="../images/nav-toggler.png" alt="botao de menu em formato de hamburguer">
+            <img src="/assets/images/nav-toggler.png" alt="botao de menu em formato de hamburguer">
         </button>
     </header>
     <!-- cabeçalho -->
@@ -47,17 +48,17 @@
     <!-- sidebar do cabeçalho -->
     <nav class="nav-sidebar" id="sidebar">
         <div class="sidebar-top">
-            <img class="sidebar-logo" src="../images/sportview-logo.png" alt="logotipo do site">
+            <img class="sidebar-logo" src="/assets/images/sportview-logo.png" alt="logotipo do site">
             <button class="close-btn" id="close-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
         <ul class="sidebar-ul">
             <li><a href="/index.html">Home</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="./esportes.html">Esportes</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="/assets/pages/sobre.html">Sobre</a></li>
+            <li><a href="/assets/pages/esportes.html">Esportes</a></li>
+            <li><a href="/assets/pages/blog.html">Blog</a></li>
+            <li><a href="/assets/pages/contato.html">Contato</a></li>
         </ul>
         <div class="social">
             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -67,70 +68,45 @@
     <!-- sidebar do cabeçalho -->
 
     <main>
-        <section class="informative">
-            <div class="informative-text">
-                <h1>Fale conosco</h1>
-                <h3>Acha que faltou algo? Nos conte aqui </h3>
+        <!-- hero -->
+        <section class="hero-esportes-sky">
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <i class="bi bi-people info-icon"></i> <!-- Ícone para tipo de esporte (grupo/individual) -->
+                        <div class="info-title">Individual</div>
+                    </div>
+                    <div class="info-block">
+                        <i class="bi bi-clock info-icon"></i> <!-- Ícone para duração -->
+                        <div class="info-title">Duração: <br>Varia por evento</div>
+                    </div>
+                    <div class="info-block">
+                        <i class="bi bi-people-fill info-icon"></i> <!-- Ícone para quantidade de jogadores -->
+                        <div class="info-title">Jogadores:<br> Em revezamento 2-4</div>
+                    </div>
+                </div>
+            </section>
+        <!-- hero -->
+        <!-- sobre -->
+        <section class="sobre">
+            <div class="sobre-item">
+                <img src="/assets/images/Sobre-sky.jpg" alt="" class="sobre-img">
+                <div class="sobre-texto">
+                    <h2>Sobre</h2>
+                    <p>O ski-biking, também conhecido como telemark biking ou uma fusão de mountain bike com esqui, é um esporte de inverno emergente que combina ciclismo em terreno nevado com técnicas de esqui, onde o ciclista usa uma bicicleta adaptada (com rodas largas para neve) e, em variantes, incorpora movimentos de telemark (esqui em arco). Surgido nos anos 1990 nos Alpes suíços e Alpes franceses como uma evolução do fatbiking (ciclismo em neve), ganhou tração com eventos como o Crankworx e competições de freeride. Não é olímpico, mas é popular em regiões nevadas da Europa e América do Norte, com federações como a Union Cycliste Internationale (UCI) regulando modalidades híbridas.</p>
+                </div>
+            </div>
+
+            <div class="sobre-item">
+                <div class="sobre-texto">
+                    <h2>Como jogar</h2>
+                    <p>O atleta pedala uma bike especializada em neve ou gelo, alternando entre pedaladas e "skates" (deslizes laterais como no esqui cross-country) para manter o equilíbrio e velocidade. Em competições, envolve descidas técnicas em pistas de neve, saltos e manobras, com ênfase em controle, agilidade e adaptação ao terreno escorregadio. Não há contato, mas requer equipamentos como capacete, proteções e pneus studs para tração. Variantes incluem uphill (subidas) e downhill freeride.</p>
+                    <P>Predominantemente individual para competições de velocidade e manobras, mas suporta formatos em grupo para corridas de endurance ou teams em festivais. É acessível para amadores com bikes de aluguel em resorts, e cresce no Brasil em estações como Campos do Jordão, via clubes de MTB adaptados.</P>
+                
+                </div>
+                <img src="/assets/images/sky-como-jogar.jpeg" alt="Jogadores disputando por uma bola de sepak-takraw no ar" class="sobre-img-2">
             </div>
         </section>
-        
-        <!-- forms -->
-        <section class="contact-section container my-5">
-        <div class="row justify-content-center align-items-stretch">
-
-            <!-- Lado esquerdo -->
-            <div class="col-lg-5 col-md-6 d-flex flex-wrap justify-content-center align-items-start info-container">
-            <div class="info-box text-center p-4 m-2">
-                <i class="bi bi-geo-alt-fill fs-2"></i>
-                <h5 class="mt-2 fw-bold">ENDEREÇO</h5>
-                <p>Av. Brasil, 123<br>Rio de Janeiro - RJ</p>
-            </div>
-
-            <div class="info-box text-center p-4 m-2">
-                <i class="bi bi-telephone-fill fs-2"></i>
-                <h5 class="mt-2 fw-bold">TELEFONE</h5>
-                <p>(21) 98888-5555</p>
-            </div>
-
-            <div class="info-box text-center p-4 m-2">
-                <i class="bi bi-printer-fill fs-2"></i>
-                <h5 class="mt-2 fw-bold">WHATSAPP</h5>
-                <p>(21) 3333-4444</p>
-            </div>
-
-            <div class="info-box text-center p-4 m-2">
-                <i class="bi bi-envelope-fill fs-2"></i>
-                <h5 class="mt-2 fw-bold">O E-MAIL</h5>
-                <p>sportview@.com.br</p>
-            </div>
-            </div>
-
-            <!-- Lado direito - formulário -->
-            <div class="col-lg-5 col-md-6 form-container p-5">
-            <h3 class="text-center mb-4 fw-bold">Entre em contato conosco</h3>
-            <form>
-                <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Digite seu nome" required>
-                </div>
-                <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
-                </div>
-                <div class="mb-3">
-                <input type="tel" class="form-control" placeholder="Digite seu telefone">
-                </div>
-                <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Digite sua cidade">
-                </div>
-                <div class="mb-3">
-                <textarea class="form-control" rows="4" placeholder="Sua mensagem..." required></textarea>
-                </div>
-                <button type="submit" class="btn-enviar">ENVIAR</button>
-            </form>
-            </div>
-
-        </div>
-        </section>
-        <!-- forms -->
+        <!-- sobre -->
     </main>
 
     <!-- rodape -->
@@ -141,7 +117,7 @@
             <a href="">Contatar</a>
         </div>
         <hr>
-        <img class="rodape-logo" src="../images/sportview-logo.png" alt="logotipo do site">
+        <img class="rodape-logo" src="/assets/images/sportview-logo.png" alt="logotipo do site">
         <section class="rodape-links">
             <div class="rodape-ancoras">
                 <h4>Links</h4>
