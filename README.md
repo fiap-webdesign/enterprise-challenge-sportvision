@@ -75,6 +75,11 @@ O **Sport View** foi planejado e implementado com as seguintes seções:
   
 ---
 
+## 7. Video de Apresentação do Site
+- https://www.youtube.com/watch?v=OEyE0BVA8pc
+
+---
+
 ## 8. Conclusão
 O projeto **Sport View** busca contribuir para a valorização de esportes invisibilizados, funcionando como uma ferramenta de difusão cultural e incentivo à prática de novas modalidades.  
 
